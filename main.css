@@ -1,6 +1,9 @@
 body {
   background-color: LavenderBlush;
 }
+h1 {
+  text-align: center;
+}
 img {
-  border-radius: 5;
+  border-radius: 5px;
 }
