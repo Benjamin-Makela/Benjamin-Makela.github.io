@@ -3,13 +3,17 @@
 }
 
 .App-logo {
-  height: 40vmin;
   pointer-events: none;
+  height: 40vmin;
+  width: 40vmin;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-bounce 2s infinite;
   }
 }
 
@@ -28,11 +32,88 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes App-logo-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  40% {
+    transform: translateY(-30px); /* Adjust the bounce height */
   }
+  60% {
+    transform: translateY(-15px); /* Adjust the bounce height */
+  }
+}
+
+/* Reset margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #282c34;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.App-button {
+  font-size: 16px;
+  padding: 12px 24px;
+  margin: 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.App-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.App-button:active {
+  background-color: #004494;
+  transform: translateY(0);
+}
+
+.Joke-header {
+  background-image: url('./images/laughingEmoji.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+.Joke-header h1 {
+  margin-bottom: 5px; /* Adjust this value to control space between heading and text */
+}
+
+.Joke-header p {
+  margin-top: 0; /* Remove margin above the text */
+}
+
+.Answer-text {
+  font-size: 10rem; /* Adjust size as needed */
+  font-weight: bold;
+  color: #61dafb; /* Optional: change color to make it stand out */
+  margin: 20px 0; /* Optional: adjust margins if needed */  
+}
+
+.Text-container {
+  background: rgba(0, 0, 0, 0.6); /* Dark background with 60% opacity */
+  padding: 20px; /* Adds padding around the text */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: shadow for better separation */
 }

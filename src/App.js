@@ -1,22 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import localImage from './images/seagull-header.jpg'; // Adjust the path as necessary
 import './App.css';
 
 function App() {
+  const navigate = useNavigate();
+
+  const goToJokePage = () => {
+    navigate('/joke-of-the-day');
+  };
+
+  const goToJokeAnsPage = () => {
+    navigate('/joke-of-the-day-answer');
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={localImage} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Join The Seagull Club Today!!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <button onClick={goToJokePage} className="App-button">
+          Joke of the Day
+        </button>
+        <button onClick={goToJokeAnsPage} className="App-button">
+          Joke of the Day Answer
+        </button>
       </header>
     </div>
   );
