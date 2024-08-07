@@ -1,0 +1,15 @@
+BENNY
+
+if you want to check this out before i finish figuring out how to host it (i recommend you do) here is how to do it!
+
+FIRST
+Download Nodejs at https://nodejs.org/en
+
+SECOND
+Pull or download the git repo as a zip and open it somewhere on your computerr from the terminal
+
+THIRD
+Inside the repo folder use the command "npm install"
+
+FOURTH
+run "npm start"
