@@ -2,7 +2,7 @@
   "name": "seagull-club",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Benjamin-Makela.github.io/",
+  "homepage": "https://www.theseagull.club/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
