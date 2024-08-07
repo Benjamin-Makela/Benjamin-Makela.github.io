@@ -37,14 +37,13 @@
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-30px); /* Adjust the bounce height */
+    transform: translateY(-30px);
   }
   60% {
-    transform: translateY(-15px); /* Adjust the bounce height */
+    transform: translateY(-15px);
   }
 }
 
-/* Reset margins and paddings */
 * {
   margin: 0;
   padding: 0;
@@ -97,23 +96,24 @@ body {
 }
 
 .Joke-header h1 {
-  margin-bottom: 5px; /* Adjust this value to control space between heading and text */
+  margin-bottom: 5px;
 }
 
 .Joke-header p {
-  margin-top: 0; /* Remove margin above the text */
+  margin-top: 0;
 }
 
 .Answer-text {
-  font-size: 10rem; /* Adjust size as needed */
+  font-size: 10rem;
   font-weight: bold;
-  color: #61dafb; /* Optional: change color to make it stand out */
-  margin: 20px 0; /* Optional: adjust margins if needed */  
+  color: #61dafb;
+  margin: 20px 0;  
 }
 
 .Text-container {
-  background: rgba(0, 0, 0, 0.6); /* Dark background with 60% opacity */
-  padding: 20px; /* Adds padding around the text */
-  border-radius: 8px; /* Optional: rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: shadow for better separation */
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
