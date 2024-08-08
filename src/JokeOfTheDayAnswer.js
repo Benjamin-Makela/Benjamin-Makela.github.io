@@ -10,7 +10,7 @@ function JokeOfTheDayAnswer() {
     };
   
     return (
-      <div className="Joke-header">
+      <div className="Answer-header">
         <div className="Text-container">
           <h1>Joke of the Day Answer</h1>
           <p className="Answer-text">13</p>

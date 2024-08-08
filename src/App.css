@@ -81,7 +81,7 @@ body {
 }
 
 .Joke-header {
-  background-image: url('./images/laughingEmoji.jpg');
+  background-image: url('./images/hold-laugh.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -101,6 +101,21 @@ body {
 
 .Joke-header p {
   margin-top: 0;
+}
+
+.Answer-header {
+  background-image: url('./images/laughingEmoji.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+  margin: 0;
 }
 
 .Answer-text {
